@@ -6,362 +6,378 @@
 */
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
 
-$background-color:lightgray;
+  /* $background-color:lightgray;
 
-$heading-color:#04046d;
+  $heading-color:#04046d; */
 
 
 body {
-  background-color: background-color;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6;
-  }
-  
-  h1 {
-      font-size: 30px;
-      font-weight: 700;
-      color:$heading-color;
-     
-    }
-
-    
-    h2 {
-      font-size: 24px;
-      font-weight: 700;
-      color:$heading-color;
+    background-color:#d5d3d3;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
     }
     
-   h3 {
-      font-size: 18px;
-      font-weight: 700;
-      color: $heading-color;
+    h1 {
+        font-size: 30px;
+        font-weight: 700;
+        color:#214d46;
+       
+      }
 
-   }
-
-
-
-
-
-    a {
-      color: #357b70;
-      -webkit-transition-property: color;
-      -o-transition-property: color;
-      transition-property: color;
-      -webkit-transition-duration: 1s;
-           -o-transition-duration: 1s;
-              transition-duration: 1s;
-      -webkit-transition-timing-function: linear;
-           -o-transition-timing-function: linear;
-              transition-timing-function: linear;
       
+      h2 {
+        font-size: 24px;
+        font-weight: 700;
+        color:#214d46;
+      }
+      
+     h3 {
+        font-size: 18px;
+        font-weight: 700;
+        color: #214d46;
+
+     }
 
   
-    }
+
+
+
+      a {
+        color: #357b70;
+        -webkit-transition-property: color;
+        -o-transition-property: color;
+        transition-property: color;
+        -webkit-transition-duration: 1s;
+             -o-transition-duration: 1s;
+                transition-duration: 1s;
+        -webkit-transition-timing-function: linear;
+             -o-transition-timing-function: linear;
+                transition-timing-function: linear;
+        
+
     
-  
-     a:visited {
-      color: #2b2b2b;
-    }  
-
-    a:hover {
-      text-decoration: none;
-      color: #214d46;
+      }
+      
+    
+       a:visited {
+        color: #214d46;
       }  
 
-    a:focus {
-      text-decoration: none;
-      color: #214d46;
+      a:hover {
+        text-decoration: none;
+        color: #2b2b2b;
+        }  
+
+      a:focus {
+        text-decoration: none;
+        color: #2b2b2b;
+        }
+      
+      a:active {
+        color:#0f231f;
+      } 
+      
+      button {
+        border:none;
+        display: inline-block;
+        font-family:inherit;
+        background-color: #357b70;
+        color:white;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 3px;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+        /* transition-duration: 0.2s;
+        transition-property: opacity; */
+        -webkit-transition: 0.2s opacity;
+        -o-transition: 0.2s opacity;
+        transition: 0.2s opacity;
+
+      } 
+      
+      .cv-button {
+        border:none;
+        display: inline-block;
+        font-family:inherit;
+        background-color: #357b70;
+        color:white;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 3px;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+        /* transition-duration: 0.2s;
+        transition-property: opacity; */
+        -webkit-transition: 0.2s opacity;
+        -o-transition: 0.2s opacity;
+        transition: 0.2s opacity;
+
       }
-    
-    a:active {
-      color:#0f231f;
-    } 
-    
-    button , .cv-button {
-      border:none;
-      display: inline-block;
-      font-family:inherit;
-      background-color: #357b70;
-      color:white;
-      text-decoration: none;
-      padding: 10px;
-      border-radius: 3px;
-      border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-      /* transition-duration: 0.2s;
-      transition-property: opacity; */
-      -webkit-transition: 0.2s opacity;
-      -o-transition: 0.2s opacity;
-      transition: 0.2s opacity;
-
-    }
-
-  
-
-    button:hover, button:focus , .cv-button:hover, .cv-button:focus{
-      cursor:pointer; 
-      opacity:0.8;
-    } 
 
     
+
+      button:hover, button:focus , .cv-button:hover, .cv-button:focus{
+        cursor:pointer; 
+        opacity:0.8;
+      } 
+
+      
+
+       
+
+    
+
+      .button__secondary {
+        background-color: #e0b354;
+        color: #214d46;
+      }
+
+      .profile {
+        max-width: 700px;
+        margin: 0 auto;
+        border: 3px solid #001613f2;
+        padding: 5px;
+      }
+
+      .profile__portrait {
+        float: left;
+        width:400px;
+        height:400px;
+        margin-right: 40px;
+        border-radius: 50%;
+      }
 
      
 
+      
+      .profile::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+       .page-header{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        padding: 20px;
+      }
+
+       .page-header__item {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 1 200px;
+                flex: 0 1 200px;
+      } 
+
+      .main-navigation:last-child {
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
+        text-align: right; 
+    }
+
+    .navigation-list{
+        list-style-type: none;
+    } 
+
+    .navigation-list li {
+        display: inline-block;
+        margin-left: 15px;
+      } 
+
+    
+      .page-footer {
+        clear: both;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        text-align: center;
+      }
+
   
 
-    .button__secondary {
-      background-color: #e0b354;
-      color: #214d46;
-    }
 
-    .profile {
-      max-width: 700px;
-      margin: 0 auto;
-      border: 3px solid #001613f2;
-      padding: 5px;
-    }
+      .description-body {text-align: center;}
+      
 
-    .profile__portrait {
-      float: left;
-      width:400px;
-      height:400px;
-      margin-right: 40px;
-      border-radius: 50%;
-    }
+      
 
+
+      #experience {margin-left: 20px;}
+
+      .first-col{text-align: left;} 
+
+      
    
 
-    
-    .profile::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
 
-     .page-header{
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      width: 100%;
-      padding: 20px;
-    }
+    /* following are for the work page */
 
-     .page-header__item {
-      -webkit-box-flex: 0;
-          -ms-flex: 0 1 200px;
-              flex: 0 1 200px;
-    } 
+      #work-des{margin-left: 20px;}
 
-    .main-navigation:last-child {
-      -webkit-box-flex: 1;
-          -ms-flex-positive: 1;
-              flex-grow: 1;
-      text-align: right; 
-  }
-
-  .navigation-list{
-      list-style-type: none;
-  } 
-
-  .navigation-list li {
-      display: inline-block;
-      margin-left: 15px;
-    } 
-
-  
-    .page-footer {
-      clear: both;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      text-align: center;
-    }
-
-
-
-
-    .description-body {text-align: center;}
-    
-
-    
-
-
-    #experience {margin-left: 20px;}
-
-    .first-col{text-align: left;} 
-
-    
- 
-
-
-  /* following are for the work page */
-
-    #work-des{margin-left: 20px;}
-
-    .grid {
-      display: -ms-grid;
-      display: grid;
-      -ms-grid-columns: 1fr 2em 1fr 2em 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap:2em;
-        
-    }
-
-    .grid__item {background-color: $background-color;}
-
-    /* following for contact page */
-
-    .personalinfo{
-      text-align:center;
-    }
-
-    #contactme{
-      margin-bottom: 3rem;
-    }
-
-a.cv-button {
-  color:#e0b354
-}    
-
-.contactmeform {text-align: center;}
-
-    @-webkit-keyframes color-change {
-      0% {
-        fill: #edc655;
+      .grid {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 2em 1fr 2em 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap:2em;
+          
       }
-      50% {
-        fill: #fcffad;
-      }
-      100% {
-        fill: #f76414;
-      }
-    }
 
-    @keyframes color-change {
-      0% {
-        fill: #edc655;
-      }
-      50% {
-        fill: #fcffad;
-      }
-      100% {
-        fill: #f76414;
-      }
-    }
+      .grid__item {background-color: #357b70;}
 
-    .sun {
-      -webkit-animation-duration: 4s;
-              animation-duration: 4s;
-      -webkit-animation-name: color-change;
-              animation-name: color-change;
-      -webkit-animation-iteration-count: infinite;
-              animation-iteration-count: infinite;
-      -webkit-animation-direction: alternate;
-              animation-direction: alternate;
-      -webkit-animation-timing-function: linear;
-              animation-timing-function: linear;
-    } 
+      /* following for contact page */
 
-    @-webkit-keyframes cloud-move {
-      from {
-        -webkit-transform: translate(0, 50px);
-                transform: translate(0, 50px);
+      .personalinfo{
+        text-align:center;
       }
-      to {
-        -webkit-transform: translate(200px, 50px);
-                transform: translate(200px, 50px);
-      }
-    } 
 
-    @keyframes cloud-move {
-      from {
-        -webkit-transform: translate(0, 50px);
-                transform: translate(0, 50px);
+      #contactme{
+        margin-bottom: 3rem;
       }
-      to {
-        -webkit-transform: translate(200px, 50px);
-                transform: translate(200px, 50px);
-      }
-    }
 
-    .cloud-front {
-      -webkit-animation-duration: 30s;
-              animation-duration: 30s;
-      -webkit-animation-name: cloud-move;
-              animation-name: cloud-move;
-      -webkit-animation-iteration-count: infinite;
-              animation-iteration-count: infinite;
-      -webkit-animation-direction: alternate;
-              animation-direction: alternate;
-      -webkit-animation-timing-function: linear;
-              animation-timing-function: linear;
-    }
+  a.cv-button {
+    color:#e0b354
+  }    
 
-    @-webkit-keyframes cloud-move-reverse{
-      from {
-        -webkit-transform: translate(446px, 48px);
-                transform: translate(446px, 48px);
-      }
-      to {
-        -webkit-transform: translate(100px, 48px);
-                transform: translate(100px, 48px);
-      }
-    }
+ .contactmeform {text-align: center;}
 
-    @keyframes cloud-move-reverse{
-      from {
-        -webkit-transform: translate(446px, 48px);
-                transform: translate(446px, 48px);
+      @-webkit-keyframes color-change {
+        0% {
+          fill: #edc655;
+        }
+        50% {
+          fill: #fcffad;
+        }
+        100% {
+          fill: #f76414;
+        }
       }
-      to {
-        -webkit-transform: translate(100px, 48px);
-                transform: translate(100px, 48px);
-      }
-    }
 
-    .cloud-back {
-      -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
-              animation: 34s cloud-move-reverse infinite alternate linear;
-    }
+      @keyframes color-change {
+        0% {
+          fill: #edc655;
+        }
+        50% {
+          fill: #fcffad;
+        }
+        100% {
+          fill: #f76414;
+        }
+      }
+
+      .sun {
+        -webkit-animation-duration: 4s;
+                animation-duration: 4s;
+        -webkit-animation-name: color-change;
+                animation-name: color-change;
+        -webkit-animation-iteration-count: infinite;
+                animation-iteration-count: infinite;
+        -webkit-animation-direction: alternate;
+                animation-direction: alternate;
+        -webkit-animation-timing-function: linear;
+                animation-timing-function: linear;
+      } 
+
+      @-webkit-keyframes cloud-move {
+        from {
+          -webkit-transform: translate(0, 50px);
+                  transform: translate(0, 50px);
+        }
+        to {
+          -webkit-transform: translate(200px, 50px);
+                  transform: translate(200px, 50px);
+        }
+      } 
+
+      @keyframes cloud-move {
+        from {
+          -webkit-transform: translate(0, 50px);
+                  transform: translate(0, 50px);
+        }
+        to {
+          -webkit-transform: translate(200px, 50px);
+                  transform: translate(200px, 50px);
+        }
+      }
+
+      .cloud-front {
+        -webkit-animation-duration: 30s;
+                animation-duration: 30s;
+        -webkit-animation-name: cloud-move;
+                animation-name: cloud-move;
+        -webkit-animation-iteration-count: infinite;
+                animation-iteration-count: infinite;
+        -webkit-animation-direction: alternate;
+                animation-direction: alternate;
+        -webkit-animation-timing-function: linear;
+                animation-timing-function: linear;
+      }
+
+      @-webkit-keyframes cloud-move-reverse{
+        from {
+          -webkit-transform: translate(446px, 48px);
+                  transform: translate(446px, 48px);
+        }
+        to {
+          -webkit-transform: translate(100px, 48px);
+                  transform: translate(100px, 48px);
+        }
+      }
+
+      @keyframes cloud-move-reverse{
+        from {
+          -webkit-transform: translate(446px, 48px);
+                  transform: translate(446px, 48px);
+        }
+        to {
+          -webkit-transform: translate(100px, 48px);
+                  transform: translate(100px, 48px);
+        }
+      }
+
+      .cloud-back {
+        -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
+                animation: 34s cloud-move-reverse infinite alternate linear;
+      }
+       
      
-   
-    
-    
+      
+      
 
-    @media all and (max-width: 500px) {
-      .grid {
-        -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+      @media all and (max-width: 500px) {
+        .grid {
+          -ms-grid-columns: 1fr;
+          grid-template-columns: 1fr;
+        }
       }
-    }
-    @media all and (min-width: 500px) and (max-width: 750px){
-      .grid {
-        -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+      @media all and (min-width: 500px) and (max-width: 750px){
+        .grid {
+          -ms-grid-columns: 1fr 1fr;
+          grid-template-columns: 1fr 1fr;
+        }
       }
-    }
-    @media all and (max-width: 750px) {
-      .grid {
-        grid-gap: 10px;
+      @media all and (max-width: 750px) {
+        .grid {
+          grid-gap: 10px;
+        }
+        .grid__item:last-child {
+          grid-column: auto / auto;
+          grid-row: auto / auto;
+        }
+        h1 {
+          font-size: 22px;
+        }
       }
-      .grid__item:last-child {
-        grid-column: auto / auto;
-        grid-row: auto / auto;
-      }
-      h1 {
-        font-size: 22px;
-      }
-    }
-    
-    
-    
-    
+      
+      
