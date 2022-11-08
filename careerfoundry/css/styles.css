@@ -46,17 +46,11 @@ body {
      }
 
   
-
-
-
       a {
         color: var(--primary-color);
         transition-property: color;
         transition-duration: 1s;
-        transition-timing-function: linear;
-        
-
-    
+        transition-timing-function: linear;      
       }
       
     
